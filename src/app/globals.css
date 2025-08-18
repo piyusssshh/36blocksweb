@@ -1,6 +1,27 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-.theexample{
-    @apply text-red-500;
+@plugin "daisyui/theme" {
+    name: "36agents";
+    default: true;
+    --color-primary: #5DD62C;
+    --color-secondary: #337418;
+    --color-base: #0F0F0F;
+    --color-light: #F8F8F8;
+    --color-info: #3B82F6;
+    --color-success: #34C759;
+    --color-warning: #FB923C;
+    --color-error: #F85149;
+}
+
+
+:root{
+    --color-primary: #5DD62C;
+    --color-secondary: #337418;
+    --color-base: #0F0F0F;
+    --color-light: #F8F8F8;
+    --color-info: #3B82F6;
+    --color-success: #34C759;
+    --color-warning: #FB923C;
+    --color-error: #F85149;
 }
