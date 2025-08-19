@@ -18,6 +18,7 @@
 :root {
     --color-primary: #5DD62C;
     --color-secondary: #4FBE22;
+    --color-primary-dark: #122B08;
     --color-base: #0F0F0F;
     --color-base-secondary: #1a1a1a;
     --color-light: #F8F8F8;
@@ -25,12 +26,14 @@
     --color-success: #34C759;
     --color-warning: #FB923C;
     --color-error: #F85149;
+    --color-gray: #CBCBCB;
 }
 
 body,
 html {
     background-color: var(--color-base);
-    line-height: 1em
+    line-height: 1.1em;
+    font-weight: 400;
 }
 
 
@@ -45,15 +48,15 @@ html {
 }
 
 .cont_py {
-    @apply py-5;
+    @apply py-20;
 }
 
 .cont_w {
-    max-width: 720px;
+    max-width: 900px;
 }
 
 .cont_gap {
-    @apply gap-5;
+    @apply gap-12;
 }
 
 
@@ -65,4 +68,8 @@ html {
 .h1_sub {
     @apply text-lg;
     line-height: 1.2em;
+}
+
+.text-white-200{
+    color: var(--color-gray);
 }
