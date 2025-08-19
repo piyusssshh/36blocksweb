@@ -5,7 +5,7 @@
     name: "36agents";
     default: true;
     --color-primary: #5DD62C;
-    --color-secondary: #337418;
+    --color-secondary: #4FBE22;
     --color-base: #0F0F0F;
     --color-light: #F8F8F8;
     --color-info: #3B82F6;
@@ -15,13 +15,54 @@
 }
 
 
-:root{
+:root {
     --color-primary: #5DD62C;
-    --color-secondary: #337418;
+    --color-secondary: #4FBE22;
     --color-base: #0F0F0F;
+    --color-base-secondary: #1a1a1a;
     --color-light: #F8F8F8;
     --color-info: #3B82F6;
     --color-success: #34C759;
     --color-warning: #FB923C;
     --color-error: #F85149;
+}
+
+body,
+html {
+    background-color: var(--color-base);
+    line-height: 1em
+}
+
+
+/* container */
+.container {
+    @apply mx-auto px-4 md:px-6;
+}
+
+
+.cont {
+    @apply flex flex-col;
+}
+
+.cont_py {
+    @apply py-5;
+}
+
+.cont_w {
+    max-width: 720px;
+}
+
+.cont_gap {
+    @apply gap-5;
+}
+
+
+/* Custom Text */
+.h1 {
+    @apply text-4xl font-bold;
+}
+
+.h1_sub {
+    @apply text-lg;
+    line-height: 1.2em;
 }

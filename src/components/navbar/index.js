@@ -1,7 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
+import MiniNavbar from "./miniNavbar";
 
 export default function Navbar() {
+  const data = [
+    {
+      name: "Features",
+      href: "/features",
+    },
+    {
+      name: "Pricing",
+      href: "/pricing",
+    },
+    {
+      name: "About",
+      href: "/about",
+    },
+    {
+      name: "Support",
+      href: "/support",
+    },
+  ];
   return (
     <>
       <header className='container flex justify-between items-center py-3'>
@@ -12,19 +31,13 @@ export default function Navbar() {
           height={80}
           alt='36agnets_logo'
         />
-        <nav className='flex gap-6'>
-          <Link className='text-link' href='/features'>
-            Features
-          </Link>
-          <Link className='text-link' href='/pricing'>
-            Pricing
-          </Link>
-          <Link className='text-link' href='/about'>
-            About
-          </Link>
-          <Link className='text-link' href='/support'>
-            Support
-          </Link>
+        <MiniNavbar data={data} />
+        <nav className='gap-6 hidden md:flex'>
+          {data.map((item, index) => (
+            <Link key={index} className='text-link' href={item.href}>
+              {item.name}
+            </Link>
+          ))}
           <Link className='text-link active-link' href='/start-building'>
             Start Building
           </Link>
