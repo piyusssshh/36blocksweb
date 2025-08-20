@@ -1,7 +1,13 @@
+import Banner from "@/components/banner";
+import Blocks from "@/components/blocks";
+import UpcomingBlogs from "@/components/upcomingBlogs";
+
 export default function Home() {
   return (
     <>
-      <div className='theexample'>Hello</div>
+      <Banner />
+      <Blocks />
+      <UpcomingBlogs/>
     </>
   );
 }
