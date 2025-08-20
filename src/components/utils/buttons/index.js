@@ -12,3 +12,16 @@ export function LinkWithIcon({ href, text, customClasses }) {
     </Link>
   );
 }
+
+export function LinkButtonWithIcon({ href, text, customClasses }) {
+  return (
+    <Link href={href}>
+      <button
+        className={`btn btn-primary flex items-center text-sm  ${customClasses}`}
+      >
+        <span>{text}</span>
+        <HiChevronRight fontWeight={400} fontSize={20} />
+      </button>
+    </Link>
+  );
+}

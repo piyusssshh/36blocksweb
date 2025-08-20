@@ -36,11 +36,10 @@ export default function Blocks() {
   return (
     <section className='bg-[var(--color-base-secondary)]'>
       <div className='container cont cont_gap cont_py '>
-        <div className='cont gap-2 cont_w w-full'>
-          <h2 className='h1'>Modular Infrastructure for Modern Builders</h2>
-          <p className='h1_sub text-white-200'>
-            Plug-and-play backend tools to launch your product faster - without
-            engineering from scratch.
+        <div className='cont gap-1 cont_w w-full'>
+          <h2 className='h2'>Essential Building Blocks</h2>
+          <p className='h2_sub text-white-200'>
+          Everything you need to build, launch, and scale your digital product
           </p>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>

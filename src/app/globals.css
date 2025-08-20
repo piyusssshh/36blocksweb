@@ -70,6 +70,15 @@ html {
     line-height: 1.2em;
 }
 
-.text-white-200{
+.h2 {
+    @apply text-3xl font-bold;
+}
+
+.h2_sub {
+    @apply text-lg;
+    line-height: 1.2em;
+}
+
+.text-white-200 {
     color: var(--color-gray);
 }
