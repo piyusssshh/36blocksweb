@@ -71,7 +71,7 @@ html {
 }
 
 .h2 {
-    @apply text-3xl font-bold;
+    @apply text-3xl font-semibold;
 }
 
 .h2_sub {
