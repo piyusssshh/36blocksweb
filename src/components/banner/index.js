@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <section className='container flex items-center gap-6 justify-between py-14 cont_gap flex-col md:flex-row min-h-[calc(100vh-6rem)]'>
+    <section className='container flex items-center justify-between cont_py cont_gap flex-col md:flex-row min-h-[calc(100vh-6rem)]'>
       <div className='cont gap-8 w-full'>
         <div className='cont gap-2 cont_w w-full'>
           <h1 className='h1'>Modular Infrastructure for Modern Builders</h1>

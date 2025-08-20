@@ -25,7 +25,7 @@ export default function UpcomingBlogs() {
   return (
     <section className=''>
       <div className='container cont cont_gap cont_py '>
-        <div className='cont gap-2 cont_w w-full mx-auto text-center'>
+        <div className='cont gap-1 cont_w w-full md:mx-auto md:text-center'>
           <h2 className='h2'>We're Building More Blocks</h2>
           <p className='h2_sub text-white-200'>
             In the near future, 36Blocks will include:
@@ -40,7 +40,7 @@ export default function UpcomingBlogs() {
                 className='w-full bg-[var(--color-base)] p-6 rounded-lg border border-[var(--color-primary-dark)] hover:border-[var(--color-primary)] cont gap-6 transition-all min-h-[200px] h-full cont justify-between'
               >
                 <Icon fontSize={40} className='text-primary' />
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-1'>
                   <h3 className='text-xl font-medium'>{block.name}</h3>
                   <p className='text-white-200'>{block.description}</p>
                 </div>
